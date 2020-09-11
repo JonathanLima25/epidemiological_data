@@ -1,13 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index')
 def index():
-    return "<h1>Epidemiological Data</h1>" \
-           "Jonathan de Lima Ferreira <strong>RA: 1460481711040</strong></br>" \
-           "Professor: Fabricio Galende Marques de Carvalho</br>"
+    return render_template('index.html')
 
 
 
