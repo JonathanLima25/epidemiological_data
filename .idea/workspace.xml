@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4bf427e-4632-451f-9acf-e34495e166b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,9 @@
       <workItem from="1599759883197" duration="91000" />
       <workItem from="1599846933594" duration="1249000" />
       <workItem from="1599850141099" duration="601000" />
+      <workItem from="1599861503264" duration="4000" />
+      <workItem from="1599929206041" duration="25000" />
+      <workItem from="1600263651363" duration="339000" />
     </task>
     <servers />
   </component>
@@ -116,6 +117,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599929231693">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1599929231693" />
     <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1599850720295">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
