@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Data de Coleta</th>
+                        <th>Doença Associada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for e in Epidemio %}
+                        <tr>
+                            <td>{{e.data_coleta}}</td>
+                            <td>{{e.doenca_associada}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

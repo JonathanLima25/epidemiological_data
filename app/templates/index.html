@@ -1,11 +1,15 @@
-<html>
-    <head>
-        <title>Epidemiological Data</title>
-    </head>
-    <body>
-        <h1>Epidemiological Data</h1>
-        <p>Jonathan de Lima Ferreira <strong>RA: 1460481711040</strong></p>
-        <p>Professor: Fabricio Galende Marques de Carvalho</br></p>
-    </body>
+{% extends 'base.html' %} {% block content %}
 
-</html>
+            <div id='Cadastros'>
+                <div id='Buttons_Doenca'>
+                    <p calss="titulos">DOENÇAS</p>
+                    <a href=cadastro_doenca><button class="cadbutton" style="width:220px"> Cadastrar Doenças</button></a>
+                    <a href='visualizacao_doencas'><button type="button" style="width:220px">Visualizar Doenças</button></a>
+                </div>
+                <div id='Buttons_Epidemiologicos'>
+                    <p class="titulos">EPIDEMIAS</p>
+                    <a href='cadastro_epidemiologico'><button type="button" style="width:220px">Cadastrar Dado Epidemiologico</button></a>
+                    <a href='visualizacao_epidemiologica'><button type="button" style="width:220px">Visualizar dados Epidemiologicos</button></a>
+                </div>
+            </div>
+{% endblock %}
