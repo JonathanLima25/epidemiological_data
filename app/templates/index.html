@@ -1,15 +1,18 @@
 {% extends 'base.html' %} {% block content %}
-
-            <div id='Cadastros'>
-                <div id='Buttons_Doenca'>
-                    <p calss="titulos">DOENÇAS</p>
-                    <a href=cadastro_doenca><button class="cadbutton" style="width:220px"> Cadastrar Doenças</button></a>
-                    <a href='visualizacao_doencas'><button type="button" style="width:220px">Visualizar Doenças</button></a>
-                </div>
-                <div id='Buttons_Epidemiologicos'>
-                    <p class="titulos">EPIDEMIAS</p>
-                    <a href='cadastro_epidemiologico'><button type="button" style="width:220px">Cadastrar Dado Epidemiologico</button></a>
-                    <a href='visualizacao_epidemiologica'><button type="button" style="width:220px">Visualizar dados Epidemiologicos</button></a>
-                </div>
-            </div>
+<main>
+    <div id='Cadastros'>
+        <div id='Buttons_Doenca'>
+            <p calss="titulos">DOENÇAS</p>
+            <a href=cadastro_doenca><button class="cadbutton" style="width:220px"> Cadastrar Doenças</button></a>
+            <a href='visualizacao_doencas'><button type="button" style="width:220px">Visualizar Doenças</button></a>
+        </div>
+        <div id='Buttons_Epidemiologicos'>
+            <p class="titulos">EPIDEMIAS</p>
+            <a href='cadastro_epidemiologico'><button type="button" style="width:220px">Cadastrar Dado
+                    Epidemiologico</button></a>
+            <a href='visualizacao_epidemiologica'><button type="button" style="width:220px">Visualizar dados
+                    Epidemiologicos</button></a>
+        </div>
+    </div>
+</main>
 {% endblock %}

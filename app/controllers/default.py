@@ -1,5 +1,7 @@
-from flask import render_template
+from flask import render_template, request
 from app import app, db
+
+from app.models.tables import Epidemiologico, Doenca
 
 @app.route('/')
 @app.route('/index')
@@ -9,6 +11,10 @@ def index():
 
 @app.route('/cadastro_doenca', methods=['GET', 'POST'])
 def cadastro_doenca():
+    if request.method == 'POST':
+        doenca = Doenca(request.form['nome'], request.form['sintomas'])
+        db.session.add(doenca)
+        db.session.commit()
     return render_template('cadastro_doenca.html')
 
 @app.route('/cadastro_epidemiologico', methods=['GET' , 'POST'])
@@ -22,7 +28,8 @@ def cadastro_epidemiologico():
 
 @app.route('/visualizacao_doencas', methods=['GET'])
 def visualizacao_doencas():
-    return render_template('visualizacao_doencas.html')
+    doenca = Doenca.query.all()
+    return render_template('visualizacao_doencas.html', doenca=doenca)
 
 @app.route('/visualizacao_epidemiologica', methods=['GET'])
 def visualizacao_epidemiologica():

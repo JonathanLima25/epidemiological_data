@@ -3,7 +3,7 @@
     background-color: rgb(204, 253, 255);
 }
 
-#Cabecalho{
+#Head{
     width: auto;
     height: 130px;
     background-color: rgb(205, 204, 255);
@@ -43,7 +43,17 @@ h4{
     width: 50%;
 }
 
+.Add_doenca_nome{
+    float:left; 
+    position: relative;
+    width: 50%;
+}
 .Add_doenca_assoc{
+    float:left; 
+    position: relative;
+    width: 50%;
+}
+.Add_sintomas{
     float:left; 
     position: relative;
     width: 50%;
@@ -85,4 +95,14 @@ h4{
     padding:5px;
     font-family: "Lucida Console", Courier, monospace;
     font-weight: bold;
+}
+
+#btn_retorno{
+    text-align: Center;
+    padding-top: 50px;
+    padding: 5px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+    margin-bottom: 50px;
 }

@@ -1,7 +1,7 @@
 from app import db
 
 class Doenca(db.Model):
-    __tablename__ = "doencas"
+    __tablename__ = "doenca"
 
     id = db.Column(db.Integer, primary_key = True)
     nome = db.Column(db.String)
@@ -17,8 +17,8 @@ class Doenca(db.Model):
 class Epidemiologico(db.Model):
     __tablename__ = "epidemiologico"
 
-    id = db.Column(db.Integer, primary_key = True)
-    data_coleta = db.Column(db.DateTime)
+    id = db.Column(db.Integer, primary_key = True, autoincrement = True)
+    data_coleta = db.Column(db.String)
     doenca_associada = db.Column(db.String)
 
     def __init__(self, data_coleta, doenca_associada):
