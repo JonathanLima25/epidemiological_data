@@ -21,5 +21,9 @@ python run.py runserver
 
 
  
-## Link do video da primeira entra:
+## Link do vídeo da primeira entrega:
 https://youtu.be/gB9v6th3vRUs
+
+
+## Link do vídeo da segunda entrega:
+https://youtu.be/z0PemOe217E
